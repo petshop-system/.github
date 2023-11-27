@@ -43,13 +43,31 @@ Seja bem-vindo a página do
 | --- | --- |
 | `master` | **Representa a versão de produção estável.** </br></br> *(a develop é mescrlada aqui assim que estiverem pronta pra produção)* |
 | `develop` |  **Branch de desenvolvimento contínuo.** </br></br> *(as features são mescladas aqui assim que estiverem prontas para teste)* |
-| `feature/[#numero-da-issue]` | **Para alterações na documentação.** </br></br> *(criadas a partir de develop e mescladas de volta nela quando concluídas)* |
-| `bugfix/[#numero-da-issue]` | **Para melhorias estéticas ou formatação do código.** </br></br> *(criadas a partir de develop)* |
+| `feature/[#numero-da-issue]` | **Para alterações na documentação.** </br></br> *(criadas a partir da develop e mescladas de volta nela quando concluídas)* |
+| `bugfix/[#numero-da-issue]` | **Para melhorias estéticas ou formatação do código.** </br></br> *(criadas a partir da develop)* |
 
-- Exemplo:
+
+
+### Iniciando uma branch para desenvolvimento:
+
+
+
+- Certifique-se de estar na branch develop:
+
 ```bash
-git checkout -b feature/#3"
+git checkout develop
 ```
+
+- Atualize a branch develop com as últimas alterações do repositório remoto:
+```bash
+git pull origin develop
+```
+- Crie um novo branch para o seu pull request:
+
+```bash
+git checkout -b feature/#numero_da_issue
+```
+
 
 ## 2.2 - Commits:
 
@@ -62,9 +80,17 @@ git checkout -b feature/#3"
 | `refactor:` | Para refatorações no código que não corrigem bugs nem adicionam funcionalidades. |
 | `test:` | Para adição ou modificação de testes. |
 
-- Exemplo:
+### Criando o commit:
+
+- Realize e confirme as alterações necessárias:
+
 ```bash
-git commit -m "feat: Adiciona funcionalidade de cadastro de usuários"
+git commit -m "feat: Descrição da sua feature"
+```
+- Envie o branch com as alterações para o repositório remoto:
+
+```bash
+git push origin feature/#numero_da_issue
 ```
 
 ## 2.3 - Configuração Inicial:
