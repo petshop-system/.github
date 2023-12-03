@@ -12,7 +12,7 @@
 ### Para mais informações do projeto:
 
  1. [Introdução](#intro)
- 2. [Regras de Versionamento](#git)
+ 2. [Padrão de Versionamento](#git)
  3. [Aplicações](#app)
  4. [Time](#time)
  4. [Outros Conteúdos](#outros)
@@ -33,7 +33,7 @@
 
 <div id='git'/>  
 
-# 2 - Regras de Versionamento:
+# 2 - Padrão de Versionamento:
 
 >O objetivo principal deste tópico é alinhar a utilização das boas práticas de versionamento, proporcionando um fluxo de trabalho consistente e eficiente para o desenvolvimento do projeto.
 
