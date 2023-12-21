@@ -18,10 +18,11 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
 <!-- 4. [Aplicações](#app)
  5. [Time](#time)
  6. [Outros Conteúdos](#outros) -->
-<p/> &nbsp;
+
 </div>
 
 <div>   
+    <p/> &nbsp;
     <hr align="center" width="100%"/>
 </div>
 
