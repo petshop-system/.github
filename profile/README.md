@@ -1,13 +1,12 @@
 <div>
-<div>
-    <img align="right" height="400px" src="https://i.imgur.com/PY8vQtq.jpg"/>
-    <h1 align="center">Seja bem-vindo ao Projeto
+    <div>
+        <img align="right" height="400px" src="https://i.imgur.com/PY8vQtq.jpg"/>
+        <h1 align="center">Seja bem-vindo ao Projeto
 
 `Petshop-System!`
-    </h1>
-</div>  
-
-<div>
+        </h1>
+    </div>  
+    <div>
 
 Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenciar o fluxo de processos em petshops.
 
@@ -20,12 +19,15 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
  5. [Time](#time)
  6. [Outros Conteúdos](#outros) -->
 
-</div>
+
+   </div>
+
 </div>
 
 <div>   
     <p/> &nbsp;
     <p/> &nbsp;
+</br>
     <hr align="center" width="100%"/>
 </div>
 
