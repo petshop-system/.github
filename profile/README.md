@@ -15,6 +15,7 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
  1. [Introdução](#intro)
  2. [System Design](#system_design)
  3. [Padrão de Versionamento](#git)
+ 4. [Stack](#stack)
 <!-- 4. [Aplicações](#app)
  5. [Time](#time)
  6. [Outros Conteúdos](#outros) -->
@@ -46,13 +47,27 @@ Este sistema de Petshop apresenta uma arquitetura distribuída com integração 
     <p/>
 </div>
     
+<div id='stack'/>  
+
+# 3 - Stack:
+
+Para atender a solução proposta, as seguintes tecnologias estão sendo utilizadas:
+
+* Go (Golang)
+* Java (Spring Boot)
+* Kafka (Message)
+* PostgreSQL
+* Python
+* Redis (Cache)
+* Swift (IOS)
+
 <div id='git'/>  
 
-# 3 - Padrão de Versionamento:
+# 4 - Padrão de Versionamento:
 
 O objetivo principal deste tópico é alinhar a utilização das boas práticas de versionamento, proporcionando um fluxo de trabalho consistente e eficiente para o desenvolvimento do projeto.
 
-## 3.1 - Branches:
+## 4.1 - Branches:
 
 | Branches | Descrição |
 | --- | --- |
@@ -83,7 +98,7 @@ git checkout -b feature/#numero_da_issue
 ```
 
 
-## 3.2 - Commits:
+## 4.2 - Commits:
 
 | Commit | Descrição |
 | --- | --- |
@@ -106,16 +121,16 @@ git commit -m "feat: Descrição da sua feature"
 ```bash
 git push origin feature/#numero_da_issue
 ```
-## 3.3 - Configuração Inicial:
+## 4.3 - Configuração Inicial:
 
-#### 2.3.1 - Atualizar o Repositório Local:
+#### 4.3.1 - Atualizar o Repositório Local:
 
 <span style="color: orange;">Objetivo:</span> Garantir que todas as informações do repositório remoto estejam atualizadas localmente.
 
 ```bash
 git fetch
 ```
-#### 3.3.2 - Verificar as Branches Remotas Disponíveis:
+#### 4.3.2 - Verificar as Branches Remotas Disponíveis:
 
 <span style="color: orange;">Objetivo:</span> Listar todas as branches remotas disponíveis.
 
@@ -124,7 +139,7 @@ git branch -r
 ```
 * Certifique-se de que a branch develop está presente nas branches remotas.
 
-#### 3.3.3 - Configurar o Upstream da Branch Develop:
+#### 4.3.3 - Configurar o Upstream da Branch Develop:
 
 <span style="color: orange;">Objetivo:</span> Estabelecer o rastreamento da branch local develop com a branch remota origin/develop.
 
@@ -133,16 +148,16 @@ git branch -r
 ```bash
 git checkout -b develop origin/develop
 ```
-## 3.4 - Trabalhando com Features:
+## 4.4 - Trabalhando com Features:
 
-#### 3.4.1 - Criar uma nova branch para a Issue:
+#### 4.4.1 - Criar uma nova branch para a Issue:
 
 <span style="color: orange;">Objetivo:</span> Isolar o desenvolvimento de novas funcionalidades.
 
 ```bash
 git checkout -b feature/#numero_da_issue
 ```
-#### 3.4.2 - Mesclar a Feature de Volta na Branch Develop:
+#### 4.4.2 - Mesclar a Feature de Volta na Branch Develop:
 
 <span style="color: orange;">Objetivo:</span> Integrar as novas funcionalidades na branch principal de desenvolvimento (develop).
 
@@ -151,7 +166,7 @@ git checkout develop
 git merge feature/#numero_da_issue
 ```
 
-#### 3.4.3 - Atualizar o Repositório Remoto:
+#### 4.4.3 - Atualizar o Repositório Remoto:
 
 <span style="color: orange;">Objetivo:</span> Sincronizar as alterações feitas na branch develop com o repositório remoto.
 
@@ -159,7 +174,7 @@ git merge feature/#numero_da_issue
 git push origin develop
 ```
 
-## 3.5 - Corrigindo Bugs (Bugfix):
+## 4.5 - Corrigindo Bugs (Bugfix):
 
 Identificação e correção de bugs são tratados com um fluxo específico.
 
@@ -178,7 +193,7 @@ git checkout -b bugfix/#numero_da_issue
 git checkout develop
 git merge feature/#numero_da_issue
 ```
-#### 3.5.3 - Atualizar o Repositório Remoto:
+#### 4.5.3 - Atualizar o Repositório Remoto:
 
 <span style="color: orange;">Objetivo:</span> Sincronizar as alterações feitas na branch develop com o repositório remoto.
 
