@@ -22,8 +22,8 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
 </div>
 
 <div>   
-    <br/> &nbsp;
-    <br/> &nbsp;
+    <p/> &nbsp;
+    <p/> &nbsp;
     <hr align="center" width="100%"/>
 </div>
 
