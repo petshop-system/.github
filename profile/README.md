@@ -18,7 +18,7 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
 <!-- 4. [Aplicações](#app)
  5. [Time](#time)
  6. [Outros Conteúdos](#outros) -->
-<br/> &nbsp;
+<p/> &nbsp;
 </div>
 
 <div>   
