@@ -12,10 +12,11 @@
 ### Para mais informações do projeto:
 
  1. [Introdução](#intro)
- 2. [Padrão de Versionamento](#git)
- 3. [Aplicações](#app)
- 4. [Time](#time)
- 4. [Outros Conteúdos](#outros)
+ 2. [System Design](#system_design)
+ 3. [Padrão de Versionamento](#git)
+ 4. [Aplicações](#app)
+ 5. [Time](#time)
+ 6. [Outros Conteúdos](#outros)
 
     </div>
     <div>   
@@ -31,13 +32,25 @@
 
 >Este sistema de Petshop apresenta uma arquitetura distribuída com integração entre diferentes tecnologias. Inicialmente, a autenticação é gerenciada por uma aplicação em Java, proporcionando segurança no acesso ao sistema. A aplicação principal do petshop é implementada em Go, aproveitando a eficiência e desempenho dessa linguagem.</br></br> Para promover a comunicação assíncrona e escalável entre os diferentes componentes, utiliza-se uma fila com Apache Kafka. Isso possibilita o processamento de eventos de maneira eficiente, além de fornecer uma abordagem de mensageria robusta.</br></br> Em fases futuras do desenvolvimento, está prevista a implementação de uma interface frontend para melhor interação com os usuários. Essa camada permitirá uma experiência mais amigável e intuitiva, facilitando a utilização do sistema.
 
+<div id='system_design'/>  
+
+# 2 - Design System
+
+<div>
+    <img align="right" height="400px" src="https://imgur.com/a/8zoz8aM"/>
+    <h1 align="center">Petshop-System
+
+`Design System!`
+    </h1>
+<div>
+    
 <div id='git'/>  
 
-# 2 - Padrão de Versionamento:
+# 3 - Padrão de Versionamento:
 
 >O objetivo principal deste tópico é alinhar a utilização das boas práticas de versionamento, proporcionando um fluxo de trabalho consistente e eficiente para o desenvolvimento do projeto.
 
-## 2.1 - Branches:
+## 3.1 - Branches:
 
 | Branches | Descrição |
 | --- | --- |
@@ -68,7 +81,7 @@ git checkout -b feature/#numero_da_issue
 ```
 
 
-## 2.2 - Commits:
+## 3.2 - Commits:
 
 | Commit | Descrição |
 | --- | --- |
@@ -91,7 +104,7 @@ git commit -m "feat: Descrição da sua feature"
 ```bash
 git push origin feature/#numero_da_issue
 ```
-## 2.3 - Configuração Inicial:
+## 3.3 - Configuração Inicial:
 
 #### 2.3.1 - Atualizar o Repositório Local:
 
@@ -100,7 +113,7 @@ git push origin feature/#numero_da_issue
 ```bash
 git fetch
 ```
-#### 2.3.2 - Verificar as Branches Remotas Disponíveis:
+#### 3.3.2 - Verificar as Branches Remotas Disponíveis:
 
 <span style="color: orange;">Objetivo:</span> Listar todas as branches remotas disponíveis.
 
@@ -109,7 +122,7 @@ git branch -r
 ```
 * Certifique-se de que a branch develop está presente nas branches remotas.
 
-#### 2.3.3 - Configurar o Upstream da Branch Develop:
+#### 3.3.3 - Configurar o Upstream da Branch Develop:
 
 <span style="color: orange;">Objetivo:</span> Estabelecer o rastreamento da branch local develop com a branch remota origin/develop.
 
@@ -118,16 +131,16 @@ git branch -r
 ```bash
 git checkout -b develop origin/develop
 ```
-## 2.4 - Trabalhando com Features:
+## 3.4 - Trabalhando com Features:
 
-#### 2.4.1 - Criar uma nova branch para a Issue:
+#### 3.4.1 - Criar uma nova branch para a Issue:
 
 <span style="color: orange;">Objetivo:</span> Isolar o desenvolvimento de novas funcionalidades.
 
 ```bash
 git checkout -b feature/#numero_da_issue
 ```
-#### 2.4.2 - Mesclar a Feature de Volta na Branch Develop:
+#### 3.4.2 - Mesclar a Feature de Volta na Branch Develop:
 
 <span style="color: orange;">Objetivo:</span> Integrar as novas funcionalidades na branch principal de desenvolvimento (develop).
 
@@ -136,7 +149,7 @@ git checkout develop
 git merge feature/#numero_da_issue
 ```
 
-#### 2.4.3 - Atualizar o Repositório Remoto:
+#### 3.4.3 - Atualizar o Repositório Remoto:
 
 <span style="color: orange;">Objetivo:</span> Sincronizar as alterações feitas na branch develop com o repositório remoto.
 
@@ -144,18 +157,18 @@ git merge feature/#numero_da_issue
 git push origin develop
 ```
 
-## 2.5 - Corrigindo Bugs (Bugfix):
+## 3.5 - Corrigindo Bugs (Bugfix):
 
 Identificação e correção de bugs são tratados com um fluxo específico.
 
-#### 2.5.1 - Criar uma Nova Branch para o Bugfix:
+#### 3.5.1 - Criar uma Nova Branch para o Bugfix:
 
 <span style="color: orange;">Objetivo:</span> Isolar a correção de bugs específicos.
 
 ```bash
 git checkout -b bugfix/#numero_da_issue
 ```
-#### 2.5.2 - Mesclar o Bugfix de Volta na Branch Develop:
+#### 3.5.2 - Mesclar o Bugfix de Volta na Branch Develop:
 
 <span style="color: orange;">Objetivo:</span> Integrar correções na branch principal de desenvolvimento.
 
@@ -163,7 +176,7 @@ git checkout -b bugfix/#numero_da_issue
 git checkout develop
 git merge feature/#numero_da_issue
 ```
-#### 2.5.3 - Atualizar o Repositório Remoto:
+#### 3.5.3 - Atualizar o Repositório Remoto:
 
 <span style="color: orange;">Objetivo:</span> Sincronizar as alterações feitas na branch develop com o repositório remoto.
 
