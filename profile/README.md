@@ -1,4 +1,5 @@
 <div>
+<div>
     <img align="right" height="400px" src="https://i.imgur.com/PY8vQtq.jpg"/>
     <h1 align="center">Seja bem-vindo ao Projeto
 
@@ -19,6 +20,7 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
  5. [Time](#time)
  6. [Outros Conteúdos](#outros) -->
 
+</div>
 </div>
 
 <div>   
