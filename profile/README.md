@@ -4,47 +4,47 @@
 
 `Petshop-System!`
     </h1>
+</div>  
+
 <div>
 
-
-> Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenciar o fluxo de processos em petshops.
+Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenciar o fluxo de processos em petshops.
 
 ### Para mais informações do projeto:
 
  1. [Introdução](#intro)
  2. [System Design](#system_design)
  3. [Padrão de Versionamento](#git)
- 4. [Aplicações](#app)
+<!-- 4. [Aplicações](#app)
  5. [Time](#time)
- 6. [Outros Conteúdos](#outros)
+ 6. [Outros Conteúdos](#outros) -->
 
-    </div>
-    <div>   
+</div>
 
-    ******
-
-    </div>
+<div>   
+    <hr/>
 </div>
 
 <div id='intro'/>  
 
 # 1 - Introdução:
 
->Este sistema de Petshop apresenta uma arquitetura distribuída com integração entre diferentes tecnologias. Inicialmente, a autenticação é gerenciada por uma aplicação em Java, proporcionando segurança no acesso ao sistema. A aplicação principal do petshop é implementada em Go, aproveitando a eficiência e desempenho dessa linguagem.</br></br> Para promover a comunicação assíncrona e escalável entre os diferentes componentes, utiliza-se uma fila com Apache Kafka. Isso possibilita o processamento de eventos de maneira eficiente, além de fornecer uma abordagem de mensageria robusta.</br></br> Em fases futuras do desenvolvimento, está prevista a implementação de uma interface frontend para melhor interação com os usuários. Essa camada permitirá uma experiência mais amigável e intuitiva, facilitando a utilização do sistema.
+Este sistema de Petshop apresenta uma arquitetura distribuída com integração entre diferentes tecnologias. Inicialmente, a autenticação é gerenciada por uma aplicação em Java, proporcionando segurança no acesso ao sistema. A aplicação principal do petshop é implementada em Go, aproveitando a eficiência e desempenho dessa linguagem.</br></br> Para promover a comunicação assíncrona e escalável entre os diferentes componentes, utiliza-se uma fila com Apache Kafka. Isso possibilita o processamento de eventos de maneira eficiente, além de fornecer uma abordagem de mensageria robusta.</br></br> Em fases futuras do desenvolvimento, está prevista a implementação de uma interface frontend para melhor interação com os usuários. Essa camada permitirá uma experiência mais amigável e intuitiva, facilitando a utilização do sistema.
 
 <div id='system_design'/>  
 
 # 2 - Design System
 
 <div>
-    <img align="right" height="400px" src="https://i.imgur.com/8zoz8aM.jpg"/>
-<div>
+    <img align="center" height="1000em" src="https://github.com/petshop-system/.github/blob/master/profile/img/petshop-system_-_design_system.png"/>
+    <p/>
+</div>
     
 <div id='git'/>  
 
 # 3 - Padrão de Versionamento:
 
->O objetivo principal deste tópico é alinhar a utilização das boas práticas de versionamento, proporcionando um fluxo de trabalho consistente e eficiente para o desenvolvimento do projeto.
+O objetivo principal deste tópico é alinhar a utilização das boas práticas de versionamento, proporcionando um fluxo de trabalho consistente e eficiente para o desenvolvimento do projeto.
 
 ## 3.1 - Branches:
 
