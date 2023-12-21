@@ -37,11 +37,7 @@
 # 2 - Design System
 
 <div>
-    <img align="right" height="400px" src="https://imgur.com/a/8zoz8aM"/>
-    <h1 align="center">Petshop-System
-
-`Design System!`
-    </h1>
+    <img align="right" height="400px" src="https://i.imgur.com/8zoz8aM.jpg"/>
 <div>
     
 <div id='git'/>  
