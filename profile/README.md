@@ -18,11 +18,11 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
 <!-- 4. [Aplicações](#app)
  5. [Time](#time)
  6. [Outros Conteúdos](#outros) -->
-
+<br/> &nbsp;
 </div>
 
 <div>   
-    <hr/>
+    <hr align="center" width="100%"/>
 </div>
 
 <div id='intro'/>  
@@ -36,7 +36,7 @@ Este sistema de Petshop apresenta uma arquitetura distribuída com integração 
 # 2 - Design System
 
 <div>
-    <img align="center" height="1000em" src="https://github.com/petshop-system/.github/blob/master/profile/img/petshop-system_-_design_system.png"/>
+    <img align="center" height="500em" src="https://github.com/petshop-system/.github/blob/master/profile/img/petshop-system_-_design_system.png"/>
     <p/>
 </div>
     
