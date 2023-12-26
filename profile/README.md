@@ -14,8 +14,8 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
 
  1. [Introdução](#intro)
  2. [System Design](#system_design)
- 3. [Padrão de Versionamento](#git)
- 4. [Stack](#stack)
+ 3. [Stack](#stack)
+ 4. [Padrão de Versionamento](#git)
 <!-- 4. [Aplicações](#app)
  5. [Time](#time)
  6. [Outros Conteúdos](#outros) -->
