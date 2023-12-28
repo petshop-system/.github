@@ -34,7 +34,7 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
 
 <div id='intro'/>  
 
-# 1 - Introdução:
+# 1 - Introdução
 
 Este sistema de Petshop apresenta uma arquitetura distribuída com integração entre diferentes tecnologias. Inicialmente, a autenticação é gerenciada por uma aplicação em Java, proporcionando segurança no acesso ao sistema. A aplicação principal do petshop é implementada em Go, aproveitando a eficiência e desempenho dessa linguagem.</br></br> Para promover a comunicação assíncrona e escalável entre os diferentes componentes, utiliza-se uma fila com Apache Kafka. Isso possibilita o processamento de eventos de maneira eficiente, além de fornecer uma abordagem de mensageria robusta.</br></br> Em fases futuras do desenvolvimento, está prevista a implementação de uma interface frontend para melhor interação com os usuários. Essa camada permitirá uma experiência mais amigável e intuitiva, facilitando a utilização do sistema.
 
@@ -49,7 +49,7 @@ Este sistema de Petshop apresenta uma arquitetura distribuída com integração 
     
 <div id='stack'/>  
 
-# 3 - Stack:
+# 3 - Stack
 
 Para atender a solução proposta, as seguintes tecnologias estão sendo utilizadas:
 
@@ -63,11 +63,11 @@ Para atender a solução proposta, as seguintes tecnologias estão sendo utiliza
 
 <div id='git'/>  
 
-# 4 - Padrão de Versionamento:
+# 4 - Padrão de Versionamento
 
 O objetivo principal deste tópico é alinhar a utilização das boas práticas de versionamento, proporcionando um fluxo de trabalho consistente e eficiente para o desenvolvimento do projeto.
 
-## 4.1 - Branches:
+## 4.1 - Branches
 
 | Branches | Descrição |
 | --- | --- |
@@ -76,9 +76,7 @@ O objetivo principal deste tópico é alinhar a utilização das boas práticas 
 | `feature/#numero-da-issue` | **Para alterações na documentação.** </br></br> *(criadas a partir da develop e mescladas de volta nela quando concluídas)* |
 | `bugfix/#numero-da-issue` | **Para melhorias estéticas ou formatação do código.** </br></br> *(criadas a partir da develop)* |
 
-
-
-### Iniciando uma branch para desenvolvimento:
+### Iniciando uma branch para desenvolvimento
 
 - Certifique-se de estar na branch develop:
 
@@ -98,7 +96,7 @@ git checkout -b feature/#numero_da_issue
 ```
 
 
-## 4.2 - Commits:
+## 4.2 - Commits
 
 | Commit | Descrição |
 | --- | --- |
@@ -109,7 +107,7 @@ git checkout -b feature/#numero_da_issue
 | `refactor:` | Para refatorações no código que não corrigem bugs nem adicionam funcionalidades. |
 | `test:` | Para adição ou modificação de testes. |
 
-### Criando o commit:
+### Criando o commit
 
 - Realize e confirme as alterações necessárias:
 
@@ -121,16 +119,16 @@ git commit -m "feat: Descrição da sua feature"
 ```bash
 git push origin feature/#numero_da_issue
 ```
-## 4.3 - Configuração Inicial:
+## 4.3 - Configuração Inicial
 
-#### 4.3.1 - Atualizar o Repositório Local:
+#### 4.3.1 - Atualizar o Repositório Local
 
 <span style="color: orange;">Objetivo:</span> Garantir que todas as informações do repositório remoto estejam atualizadas localmente.
 
 ```bash
 git fetch
 ```
-#### 4.3.2 - Verificar as Branches Remotas Disponíveis:
+#### 4.3.2 - Verificar as Branches Remotas Disponíveis
 
 <span style="color: orange;">Objetivo:</span> Listar todas as branches remotas disponíveis.
 
@@ -139,7 +137,7 @@ git branch -r
 ```
 * Certifique-se de que a branch develop está presente nas branches remotas.
 
-#### 4.3.3 - Configurar o Upstream da Branch Develop:
+#### 4.3.3 - Configurar o Upstream da Branch Develop
 
 <span style="color: orange;">Objetivo:</span> Estabelecer o rastreamento da branch local develop com a branch remota origin/develop.
 
@@ -148,16 +146,16 @@ git branch -r
 ```bash
 git checkout -b develop origin/develop
 ```
-## 4.4 - Trabalhando com Features:
+## 4.4 - Trabalhando com Features
 
-#### 4.4.1 - Criar uma nova branch para a Issue:
+#### 4.4.1 - Criar uma nova branch para a Issue
 
 <span style="color: orange;">Objetivo:</span> Isolar o desenvolvimento de novas funcionalidades.
 
 ```bash
 git checkout -b feature/#numero_da_issue
 ```
-#### 4.4.2 - Mesclar a Feature de Volta na Branch Develop:
+#### 4.4.2 - Mesclar a Feature de Volta na Branch Develop
 
 <span style="color: orange;">Objetivo:</span> Integrar as novas funcionalidades na branch principal de desenvolvimento (develop).
 
@@ -166,7 +164,7 @@ git checkout develop
 git merge feature/#numero_da_issue
 ```
 
-#### 4.4.3 - Atualizar o Repositório Remoto:
+#### 4.4.3 - Atualizar o Repositório Remoto
 
 <span style="color: orange;">Objetivo:</span> Sincronizar as alterações feitas na branch develop com o repositório remoto.
 
@@ -174,18 +172,18 @@ git merge feature/#numero_da_issue
 git push origin develop
 ```
 
-## 4.5 - Corrigindo Bugs (Bugfix):
+## 4.5 - Corrigindo Bugs (Bugfix)
 
 Identificação e correção de bugs são tratados com um fluxo específico.
 
-#### 3.5.1 - Criar uma Nova Branch para o Bugfix:
+#### 4.5.1 - Criar uma Nova Branch para o Bugfix
 
 <span style="color: orange;">Objetivo:</span> Isolar a correção de bugs específicos.
 
 ```bash
 git checkout -b bugfix/#numero_da_issue
 ```
-#### 3.5.2 - Mesclar o Bugfix de Volta na Branch Develop:
+#### 4.5.2 - Mesclar o Bugfix de Volta na Branch Develop:
 
 <span style="color: orange;">Objetivo:</span> Integrar correções na branch principal de desenvolvimento.
 
