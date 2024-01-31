@@ -16,8 +16,8 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
  2. [System Design](#system_design)
  3. [Stack](#stack)
  4. [Padrão de Versionamento](#git)
-<!-- 4. [Aplicações](#app)
- 5. [Time](#time)
+ 5. [Aplicações](#app)
+ <!-- 5. [Time](#time)
  6. [Outros Conteúdos](#outros) -->
 
 
@@ -198,3 +198,12 @@ git merge feature/#numero_da_issue
 ```bash
 git push origin develop
 ```
+
+<div id='app'/>  
+
+# 5 - Aplicações
+
+A solução que o projeto Petshop-System proporciona é suportada por um conjunto de aplicações que combinadas possibilitam que as 
+atividades sejam executadas.
+
+## 5.1 - 
