@@ -206,12 +206,11 @@ git push origin develop
 A solução que o projeto Petshop-System proporciona é suportada por um conjunto de aplicações que combinadas possibilitam que as 
 atividades sejam executadas.
 
-
 | Aplicação                                                                              | Host        | Porta     | Linguagem |
 |----------------------------------------------------------------------------------------|-------------|-----------|-----------|
 | [petshop-api](https://github.com/petshop-system/petshop-api)                           | localhost   | 5001      | Go        | 
-| [petshop-message-api](https://github.com/petshop-system/petshop-message-api)           | localhost   | 5003      | Java      |
-| [petshop-admin-api](https://github.com/petshop-system/petshop-admin-api)               | localhost   | 5002      | Java      | 
+| [petshop-admin-api](https://github.com/petshop-system/petshop-admin-api)               | localhost   | 5002      | Java      |
+| [petshop-message-api](https://github.com/petshop-system/petshop-message-api)           | localhost   | 5003      | Java      | 
 | [petshop-bff-desktop](https://github.com/petshop-system/petshop-bff-desktop)           | localhost   | 9998      | Java      |
 | [petshop-api-gateway](https://github.com/petshop-system/petshop-api-gateway)           | localhost   | 9999      | Go        |
 | [petshop-reports-api](https://github.com/petshop-system/petshop-reports-api)           | localhost   | undefined | undefined |
