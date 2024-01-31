@@ -213,7 +213,7 @@ atividades sejam executadas.
 | [petshop-message-api](https://github.com/petshop-system/petshop-message-api)           | localhost   | 5003      | Java      | 
 | [petshop-bff-desktop](https://github.com/petshop-system/petshop-bff-desktop)           | localhost   | 9998      | Java      |
 | [petshop-api-gateway](https://github.com/petshop-system/petshop-api-gateway)           | localhost   | 9999      | Go        |
-| [petshop-reports-api](https://github.com/petshop-system/petshop-reports-api)           | localhost   | undefined | undefined |
+| [petshop-reports-api](https://github.com/petshop-system/petshop-reports-api)           | localhost   | undefined | Python    |
 | [petshop-autenticacao-api](https://github.com/petshop-system/petshop-autenticacao-api) | localhost   | undefined | undefined |
 | [petshop-system-ios](https://github.com/petshop-system/petshop-system-ios)             | undefined   | undefined | Swift     |
 
