@@ -209,13 +209,13 @@ atividades sejam executadas.
 | Aplicação                                                                              | Host        | Porta     | Linguagem |
 |----------------------------------------------------------------------------------------|-------------|-----------|-----------|
 | [petshop-api](https://github.com/petshop-system/petshop-api)                           | localhost   | 5001      | Go        | 
+| [petshop-api-gateway](https://github.com/petshop-system/petshop-api-gateway)           | localhost   | 9999      | Go        |
 | [petshop-admin-api](https://github.com/petshop-system/petshop-admin-api)               | localhost   | 5002      | Java      |
-| [petshop-message-api](https://github.com/petshop-system/petshop-message-api)           | localhost   | 5003      | Java      | 
+| [petshop-autenticacao-api](https://github.com/petshop-system/petshop-autenticacao-api) | localhost   | undefined | undefined |
 | [petshop-bff-desktop](https://github.com/petshop-system/petshop-bff-desktop)           | localhost   | 9998      | Java      |
 | petshop-bff-mobile                                                                     | localhost   | 9997      | undefined |
-| [petshop-api-gateway](https://github.com/petshop-system/petshop-api-gateway)           | localhost   | 9999      | Go        |
+| [petshop-message-api](https://github.com/petshop-system/petshop-message-api)           | localhost   | 5003      | Java      | 
 | [petshop-reports-api](https://github.com/petshop-system/petshop-reports-api)           | localhost   | undefined | Python    |
-| [petshop-autenticacao-api](https://github.com/petshop-system/petshop-autenticacao-api) | localhost   | undefined | undefined |
 | [petshop-system-ios](https://github.com/petshop-system/petshop-system-ios)             | undefined   | undefined | Swift     |
 
 
