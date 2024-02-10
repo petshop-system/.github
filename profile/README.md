@@ -237,6 +237,16 @@ DEV_ENV_FOLDER
 | ----- [GO_PROJECTS]
 ```
 
+OBS: pode-se adicionar (exportar) as variáveis de ambiente ao arquivo `bashrc` ou `zshrc`.
+
+Exemplo no arquivo `bashrc` ou `zshrc`:
+
+```
+export DEV_ENV_FOLDER=/home/[MINHA_PASTA]/Desenvolvimento
+export PETSHOP_GO_FOLDER=$GOPATH/src/github.com/petshop-system
+PATH=$DEV_ENV_FOLDER:$PETSHOP_GO_FOLDER:$PATH
+```
+
 ## 5.1 - Arquivos
 
 * [docker-compose](configuration/docker-compose.yaml);
