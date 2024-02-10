@@ -237,7 +237,7 @@ DEV_ENV_FOLDER
 | ----- [GO_PROJECTS]
 ```
 
-# 5.1 - Arquivos
+## 5.1 - Arquivos
 
 * [docker-compose](configuration/docker-compose.yaml);
 * [init.sql](configuration/init.sql);
