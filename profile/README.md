@@ -203,8 +203,7 @@ git push origin develop
 
 # 5 - Aplicações
 
-A solução que o projeto Petshop-System proporciona é suportada por um conjunto de aplicações que combinadas possibilitam que as 
-atividades sejam executadas.
+A solução que o projeto Petshop-System proporciona é suportada por um conjunto de aplicações que combinadas possibilitam que as atividades sejam executadas.
 
 | Aplicação                                                                              | Host        | Porta     | Linguagem |
 |----------------------------------------------------------------------------------------|-------------|-----------|-----------|
@@ -219,5 +218,26 @@ atividades sejam executadas.
 | [petshop-system-ios](https://github.com/petshop-system/petshop-system-ios)             | undefined   | undefined | Swift     |
 
 
+Para iniciar as aplicações de forma padronizada se faz necessário configurar as variáveis de ambiente `DEV_ENV_FOLDER` e `PETSHOP_GO_FOLDER`. Essas variáveis devem conter as pastas padrões de desenvolvimento, desta forma, facilitando e padronizando a utilização do docker-compose para inicializar as aplicações.
 
+```
+$ export DEV_ENV_FOLDER=[PASTA RAÍZ DE DESENVOLVIMENTO] 
+$ export PETSHOP_GO_FOLDER=$GOPATH/src/github.com/petshop-system
+```
 
+Estrutura esperada.
+
+```
+DEV_ENV_FOLDER
+| [JAVA_PROJECTS]
+| - go
+| -- src
+| --- github.com
+| ---- petshop-system
+| ----- [GO_PROJECTS]
+```
+
+# 5.1 - Arquivos
+
+* [docker-compose](configuration/docker-compose.yaml);
+* [init.sql](configuration/init.sql);
