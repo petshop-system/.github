@@ -1,3 +1,27 @@
+create schema petshop_gateway
+
+    create table gateway
+    (
+        id serial not null
+            constraint petshop_api_gateway_pkey primary key,
+        router  varchar(255) not null,
+        configuration jsonb default '{"":""}'
+    )
+
+    create
+        unique index petshop_api_gateway_id_uindex
+        on gateway (id);
+
+INSERT INTO petshop_gateway.gateway (router, configuration)
+VALUES
+    ('address', '{"host": "http://petshop-api:5001", "app-context": "petshop-api"}'),
+    ('customer', '{"host": "http://petshop-api:5001", "app-context": "petshop-api"}'),
+    ('employee', '{"host": "http://petshop-admin-api:5002", "app-context": "petshop-admin-api"}'),
+    ('schedule', '{"host": "https://demo2908199.mockable.io", "app-context": "petshop-api"}'),
+    ('schedule-request', '{"host": "http://petshop-message-api:5003","app-context": "petshop-message-api"}'),
+    ('service', '{"host": "http://petshop-admin-api:5002", "app-context": "petshop-admin-api"}'),
+    ('bff-mobile-customer', '{"host": "http://petshop-bff-mobile:9997", "app-context": "petshop-bff-mobile"}');
+
 create schema petshop_api
 
 -- auto-generated definition
