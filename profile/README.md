@@ -215,7 +215,7 @@ A solução que o projeto Petshop-System proporciona é suportada por um conjunt
 | petshop-bff-mobile                                                                     | localhost                     | 9997      | undefined |
 | [petshop-message-api](https://github.com/petshop-system/petshop-message-api)           | localhost,petshop-message-api | 5003      | Java      | 
 | [petshop-reports-api](https://github.com/petshop-system/petshop-reports-api)           | localhost                     | undefined | Python    |
-| [petshop-system-ios](https://github.com/petshop-system/petshop-system-ios)             | undefined                     | undefined | Swift     |
+| [petshop-system-ios](https://github.com/petshop-system/petshop-system-ios)             | undefined                     | undefined | Swift (IOS)    |
 
 
 
