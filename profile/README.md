@@ -251,4 +251,5 @@ PATH=$DEV_ENV_FOLDER:$PETSHOP_GO_FOLDER:$PATH
 ## 5.1 - Arquivos
 
 * [docker-compose](configuration/docker-compose.yaml);
+* [Figma](https://www.figma.com/file/ZpoeDPZITzuaznlX7d4kHc/Petshop-System?type=design&node-id=3%3A125&mode=design&t=0rZxpFY0YyEr9pgw-1);
 * [init.sql](configuration/init.sql);
