@@ -52,6 +52,10 @@ Este sistema de Petshop apresenta uma arquitetura distribuída com integração 
 ## 2.2 - Design de tela e fluxo
 
 Para atender a concepção das telas e do fluxo da aplicação será utilizado o [Figma](https://www.figma.com/file/ZpoeDPZITzuaznlX7d4kHc/Petshop-System?type=design&node-id=3%3A125&mode=design&t=0rZxpFY0YyEr9pgw-1).
+
+<div markdown="1">
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZpoeDPZITzuaznlX7d4kHc%2FPetshop-System%3Ftype%3Ddesign%26node-id%3D3%253A125%26mode%3Ddesign%26t%3D0rZxpFY0YyEr9pgw-1" allowfullscreen></iframe>
+</div>
     
 <div id='stack'/>  
 
