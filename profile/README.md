@@ -13,7 +13,7 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
 ### Para mais informações do projeto:
 
  1. [Introdução](#intro)
- 2. [System Design](#system_design)
+ 2. [Design](#design)
  3. [Stack](#stack)
  4. [Padrão de Versionamento](#git)
  5. [Aplicações](#app)
@@ -38,14 +38,20 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
 
 Este sistema de Petshop apresenta uma arquitetura distribuída com integração entre diferentes tecnologias. Inicialmente, a autenticação é gerenciada por uma aplicação em Java, proporcionando segurança no acesso ao sistema. A aplicação principal do petshop é implementada em Go, aproveitando a eficiência e desempenho dessa linguagem.</br></br> Para promover a comunicação assíncrona e escalável entre os diferentes componentes, utiliza-se uma fila com Apache Kafka. Isso possibilita o processamento de eventos de maneira eficiente, além de fornecer uma abordagem de mensageria robusta.</br></br> Em fases futuras do desenvolvimento, está prevista a implementação de uma interface frontend para melhor interação com os usuários. Essa camada permitirá uma experiência mais amigável e intuitiva, facilitando a utilização do sistema.
 
-<div id='system_design'/>  
+<div id='design'/>  
 
-# 2 - Design System
+# 2 - Design 
+
+## 2.1 - Design System
 
 <div>
     <img align="center" src="https://github.com/petshop-system/.github/blob/master/profile/img/petshop-system_-_design_system.png"/>
     <p/>
 </div>
+
+## 2.2 - Design de tela e fluxo
+
+Para atender a concepção das telas e do fluxo da aplicação será utilizado o [Figma](https://www.figma.com/file/ZpoeDPZITzuaznlX7d4kHc/Petshop-System?type=design&node-id=3%3A125&mode=design&t=0rZxpFY0YyEr9pgw-1).
     
 <div id='stack'/>  
 
@@ -251,5 +257,4 @@ PATH=$DEV_ENV_FOLDER:$PETSHOP_GO_FOLDER:$PATH
 ## 5.1 - Arquivos
 
 * [docker-compose](configuration/docker-compose.yaml);
-* [Figma](https://www.figma.com/file/ZpoeDPZITzuaznlX7d4kHc/Petshop-System?type=design&node-id=3%3A125&mode=design&t=0rZxpFY0YyEr9pgw-1);
 * [init.sql](configuration/init.sql);
