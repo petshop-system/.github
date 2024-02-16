@@ -1,6 +1,6 @@
 create schema petshop_gateway
 
-    create table gateway
+    create table router
     (
         id serial not null
             constraint petshop_api_gateway_pkey primary key,
@@ -10,17 +10,17 @@ create schema petshop_gateway
 
     create
         unique index petshop_api_gateway_id_uindex
-        on gateway (id);
+        on router (id);
 
-INSERT INTO petshop_gateway.gateway (router, configuration)
+INSERT INTO petshop_gateway.router (router, configuration)
 VALUES
-    ('address', '{"host": "http://petshop-api:5001", "app-context": "petshop-api"}'),
-    ('customer', '{"host": "http://petshop-api:5001", "app-context": "petshop-api"}'),
-    ('employee', '{"host": "http://petshop-admin-api:5002", "app-context": "petshop-admin-api"}'),
-    ('schedule', '{"host": "https://demo2908199.mockable.io", "app-context": "petshop-api"}'),
-    ('schedule-request', '{"host": "http://petshop-message-api:5003","app-context": "petshop-message-api"}'),
-    ('service', '{"host": "http://petshop-admin-api:5002", "app-context": "petshop-admin-api"}'),
-    ('bff-mobile-customer', '{"host": "http://petshop-bff-mobile:9997", "app-context": "petshop-bff-mobile"}');
+    ('address', '{"host": "http://petshop-api:5001", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-api"}'),
+    ('customer', '{"host": "http://petshop-api:5001", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-api"}'),
+    ('employee', '{"host": "http://petshop-admin-api:5002", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-admin-api"}'),
+    ('schedule', '{"host": "https://demo2908199.mockable.io", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-api"}'),
+    ('schedule-request', '{"host": "http://petshop-message-api:5003", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-message-api"}'),
+    ('service', '{"host": "http://petshop-admin-api:5002", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-admin-api"}'),
+    ('bff-desktop-service', '{"host": "http://petshop-bff-desktop:9998", "replace-old-app-context": "petshop-system/bff-desktop-service", "replace-new-app-context": "petshop-bff-desktop"}');
 
 create schema petshop_api
 
@@ -354,7 +354,7 @@ BEGIN
                                 from petshop_api.schedule schedule
                                 where service_attention.id = schedule.fk_id_service_employee_attention_time
                                   and schedule.booked_at = TO_DATE(P_DATE_SCHEDULE, 'YYYY-MM-DD')))
-            service_attention -- getting all available services attention in order to schedules
+                 service_attention -- getting all available services attention in order to schedules
         where 1 = 1
           and not exists( -- denying select
             -- select to get employees with possibles appointments in the same hour
@@ -366,10 +366,9 @@ BEGIN
               and service_attention.initial_time = seat.initial_time
               and seat.fk_id_employee = service_attention.fk_id_employee
 
-            )
+        )
           and service_attention.fk_id_service = P_SERVICE_ID -- getting only service attention for specific service
         order by cast(SPLIT_PART(initial_time, ':', 1) as INTEGER);
 end;
 $$
-
 
