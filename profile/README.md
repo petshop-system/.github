@@ -211,17 +211,17 @@ git push origin develop
 
 A solução que o projeto Petshop-System proporciona é suportada por um conjunto de aplicações que combinadas possibilitam que as atividades sejam executadas.
 
-| Aplicação                                                                              | Host                          | Porta     | Linguagem |
-|----------------------------------------------------------------------------------------|-------------------------------|-----------|-----------|
-| [petshop-api](https://github.com/petshop-system/petshop-api)                           | localhost,petshop-api         | 5001      | Go        | 
-| [petshop-api-gateway](https://github.com/petshop-system/petshop-api-gateway)           | localhost,petshop-api-gateway | 9999      | Go        |
-| [petshop-admin-api](https://github.com/petshop-system/petshop-admin-api)               | localhost,petshop-admin-api   | 5002      | Java      |
-| [petshop-autenticacao-api](https://github.com/petshop-system/petshop-autenticacao-api) | localhost                     | undefined | undefined |
-| [petshop-bff-desktop](https://github.com/petshop-system/petshop-bff-desktop)           | localhost                     | 9998      | Java      |
-| petshop-bff-mobile                                                                     | localhost                     | 9997      | undefined |
-| [petshop-message-api](https://github.com/petshop-system/petshop-message-api)           | localhost,petshop-message-api | 5003      | Java      | 
-| [petshop-reports-api](https://github.com/petshop-system/petshop-reports-api)           | localhost                     | undefined | Python    |
-| [petshop-system-ios](https://github.com/petshop-system/petshop-system-ios)             | undefined                     | undefined | Swift (IOS)    |
+| Aplicação                                                                              | Host                          | Porta     | Linguagem  |
+|----------------------------------------------------------------------------------------|-------------------------------|-----------|------------|
+| [petshop-api](https://github.com/petshop-system/petshop-api)                           | localhost,petshop-api         | 5001      | Go         | 
+| [petshop-api-gateway](https://github.com/petshop-system/petshop-api-gateway)           | localhost,petshop-api-gateway | 9999      | Go         |
+| [petshop-admin-api](https://github.com/petshop-system/petshop-admin-api)               | localhost,petshop-admin-api   | 5002      | Java       |
+| [petshop-autenticacao-api](https://github.com/petshop-system/petshop-autenticacao-api) | localhost                     | undefined | undefined  |
+| [petshop-bff-desktop](https://github.com/petshop-system/petshop-bff-desktop)           | localhost,petshop-bff-desktop | 9998      | Java       |
+| petshop-bff-mobile                                                                     | localhost                     | 9997      | undefined  |
+| [petshop-message-api](https://github.com/petshop-system/petshop-message-api)           | localhost,petshop-message-api | 5003      | Java       | 
+| [petshop-reports-api](https://github.com/petshop-system/petshop-reports-api)           | localhost                     | undefined | Python     |
+| [petshop-system-ios](https://github.com/petshop-system/petshop-system-ios)             | undefined                     | undefined | Swift (IOS)|
 
 
 
