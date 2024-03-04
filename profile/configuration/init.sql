@@ -15,12 +15,39 @@ create schema petshop_gateway
 INSERT INTO petshop_gateway.router (router, configuration)
 VALUES
     ('address', '{"host": "http://petshop-api:5001", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-api"}'),
+    ('authentication', '{"host": "http://petshop-auth-api:5004", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-auth-api"}'),
+    ('bff-desktop-service', '{"host": "http://petshop-bff-desktop:9998", "replace-old-app-context": "petshop-system/bff-desktop-service", "replace-new-app-context": "petshop-bff-desktop"}'),
     ('customer', '{"host": "http://petshop-api:5001", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-api"}'),
     ('employee', '{"host": "http://petshop-admin-api:5002", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-admin-api"}'),
     ('schedule', '{"host": "https://demo2908199.mockable.io", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-api"}'),
     ('schedule-request', '{"host": "http://petshop-message-api:5003", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-message-api"}'),
-    ('service', '{"host": "http://petshop-admin-api:5002", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-admin-api"}'),
-    ('bff-desktop-service', '{"host": "http://petshop-bff-desktop:9998", "replace-old-app-context": "petshop-system/bff-desktop-service", "replace-new-app-context": "petshop-bff-desktop"}');
+    ('service', '{"host": "http://petshop-admin-api:5002", "replace-old-app-context": "petshop-system", "replace-new-app-context": "petshop-admin-api"}');
+
+create schema petshop_auth
+
+    create table authentication
+    (
+        id serial not null constraint petshop_auth_api_authentication_pkey primary key,
+        login varchar(100) not null unique,
+        password varchar(255),
+        id_user int,
+        active bool default false
+    )
+
+    create
+        unique index petshop_auth_api_authentication_id_uindex
+        on authentication (id)
+
+    create
+        unique index petshop_auth_api_id_authentication_user_uindex
+        on authentication (id_user)
+
+    create
+        unique index petshop_auth_api_authentication_login_uindex
+        on authentication (login);
+
+INSERT INTO petshop_auth.authentication (login, password, id_user)
+VALUES ('admin@petshopsystem.com', '$2a$10$InNNO0QNeLe3Yc2mWPYmvOta421VA64e1Hq1mpPGvgymdm6w0uBvq', 1); -- senha 1234
 
 create schema petshop_api
 
