@@ -257,5 +257,7 @@ PATH=$DEV_ENV_FOLDER:$PETSHOP_GO_FOLDER:$PATH
 
 ## 5.1 - Arquivos
 
-* [docker-compose](./configuration/docker-compose.yaml);
-* [init.sql](./configuration/init.sql);
+* [docker-compose](https://github.com/petshop-system/.github/blob/master/profile/configuration/docker-compose.yaml);
+* [petshop_api.sql](https://github.com/petshop-system/.github/blob/master/profile/configuration/petshop_api.sql);
+* [petshop_auth.sql](https://github.com/petshop-system/.github/blob/master/profile/configuration/petshop_auth.sql);
+* [petshop_gateway.sql](https://github.com/petshop-system/.github/blob/master/profile/configuration/petshop_gateway.sql);
