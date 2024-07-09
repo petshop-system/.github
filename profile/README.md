@@ -15,11 +15,8 @@ Aqui desenvolvemos e aprimoramos continuamente um sistema eficiente para gerenci
  1. [Introdução](#intro)
  2. [Design](#design)
  3. [Stack](#stack)
- 4. [Padrão de Versionamento](#git)
- 5. [Aplicações](#app)
- <!-- 5. [Time](#time)
- 6. [Outros Conteúdos](#outros) -->
-
+ 4. [Aplicações](#app)
+ 5. [Padrão de Versionamento](#git)
 
    </div>
 
@@ -68,147 +65,10 @@ Para atender a solução proposta, as seguintes tecnologias estão sendo utiliza
 * Redis (Cache)
 * Swift (IOS)
 
-<div id='git'/>  
-
-# 4 - Padrão de Versionamento
-
-O objetivo principal deste tópico é alinhar a utilização das boas práticas de versionamento, proporcionando um fluxo de trabalho consistente e eficiente para o desenvolvimento do projeto.
-
-## 4.1 - Branches
-
-| Branches | Descrição |
-| --- | --- |
-| `master` | **Representa a versão de produção estável.** </br></br> *(a develop é mescrlada aqui assim que estiverem pronta pra produção)* |
-| `develop` |  **Branch de desenvolvimento contínuo.** </br></br> *(as features são mescladas aqui assim que estiverem prontas para teste)* |
-| `feature/#numero-da-issue` | **Para alterações na documentação.** </br></br> *(criadas a partir da develop e mescladas de volta nela quando concluídas)* |
-| `bugfix/#numero-da-issue` | **Para melhorias estéticas ou formatação do código.** </br></br> *(criadas a partir da develop)* |
-
-### Iniciando uma branch para desenvolvimento
-
-- Certifique-se de estar na branch develop:
-
-```bash
-git checkout develop
-```
-
-- Atualize a branch develop com as últimas alterações do repositório remoto:
-
-```bash
-git pull origin develop
-```
-- Crie um novo branch para o seu pull request:
-
-```bash
-git checkout -b feature/#numero_da_issue
-```
-
-
-## 4.2 - Commits
-
-| Commit | Descrição |
-| --- | --- |
-| `feat:` | Para novas funcionalidades. |
-| `fix:` | Para correção de bugs |
-| `docs:` | Para alterações na documentação. |
-| `style:` | Para melhorias estéticas ou formatação do código. |
-| `refactor:` | Para refatorações no código que não corrigem bugs nem adicionam funcionalidades. |
-| `test:` | Para adição ou modificação de testes. |
-
-### Criando o commit
-
-- Realize e confirme as alterações necessárias:
-
-```bash
-git commit -m "feat: Descrição da sua feature"
-```
-- Envie o branch com as alterações para o repositório remoto:
-
-```bash
-git push origin feature/#numero_da_issue
-```
-## 4.3 - Configuração Inicial
-
-#### 4.3.1 - Atualizar o Repositório Local
-
-<span style="color: orange;">Objetivo:</span> Garantir que todas as informações do repositório remoto estejam atualizadas localmente.
-
-```bash
-git fetch
-```
-#### 4.3.2 - Verificar as Branches Remotas Disponíveis
-
-<span style="color: orange;">Objetivo:</span> Listar todas as branches remotas disponíveis.
-
-```bash
-git branch -r
-```
-* Certifique-se de que a branch develop está presente nas branches remotas.
-
-#### 4.3.3 - Configurar o Upstream da Branch Develop
-
-<span style="color: orange;">Objetivo:</span> Estabelecer o rastreamento da branch local develop com a branch remota origin/develop.
-
-* Caso não exista a branch, siga criando localmente a branch develop rastreando a branch remota origin/develop:
-
-```bash
-git checkout -b develop origin/develop
-```
-## 4.4 - Trabalhando com Features
-
-#### 4.4.1 - Criar uma nova branch para a Issue
-
-<span style="color: orange;">Objetivo:</span> Isolar o desenvolvimento de novas funcionalidades.
-
-```bash
-git checkout -b feature/#numero_da_issue
-```
-#### 4.4.2 - Mesclar a Feature de Volta na Branch Develop
-
-<span style="color: orange;">Objetivo:</span> Integrar as novas funcionalidades na branch principal de desenvolvimento (develop).
-
-```bash
-git checkout develop
-git merge feature/#numero_da_issue
-```
-
-#### 4.4.3 - Atualizar o Repositório Remoto
-
-<span style="color: orange;">Objetivo:</span> Sincronizar as alterações feitas na branch develop com o repositório remoto.
-
-```bash
-git push origin develop
-```
-
-## 4.5 - Corrigindo Bugs (Bugfix)
-
-Identificação e correção de bugs são tratados com um fluxo específico.
-
-#### 4.5.1 - Criar uma Nova Branch para o Bugfix
-
-<span style="color: orange;">Objetivo:</span> Isolar a correção de bugs específicos.
-
-```bash
-git checkout -b bugfix/#numero_da_issue
-```
-#### 4.5.2 - Mesclar o Bugfix de Volta na Branch Develop:
-
-<span style="color: orange;">Objetivo:</span> Integrar correções na branch principal de desenvolvimento.
-
-```bash
-git checkout develop
-git merge feature/#numero_da_issue
-```
-#### 4.5.3 - Atualizar o Repositório Remoto:
-
-<span style="color: orange;">Objetivo:</span> Sincronizar as alterações feitas na branch develop com o repositório remoto.
-
-```bash
-git push origin develop
-```
 
 <div id='app'/>  
 
-# 5 - Aplicações
+# 4 - Aplicações
 
 A solução que o projeto Petshop-System proporciona é suportada por um conjunto de aplicações que combinadas possibilitam que as atividades sejam executadas.
 
@@ -255,9 +115,148 @@ export PETSHOP_GO_FOLDER=$GOPATH/src/github.com/petshop-system
 PATH=$DEV_ENV_FOLDER:$PETSHOP_GO_FOLDER:$PATH
 ```
 
-## 5.1 - Arquivos
+## 4.1 - Arquivos
 
 * [docker-compose](https://github.com/petshop-system/.github/blob/master/profile/configuration/docker-compose.yaml);
 * [petshop_api.sql](https://github.com/petshop-system/.github/blob/master/profile/configuration/petshop_api.sql);
 * [petshop_auth.sql](https://github.com/petshop-system/.github/blob/master/profile/configuration/petshop_auth.sql);
 * [petshop_gateway.sql](https://github.com/petshop-system/.github/blob/master/profile/configuration/petshop_gateway.sql);
+
+
+<div id='git'/>  
+
+# 5 - Padrão de Versionamento
+
+O objetivo principal deste tópico é alinhar a utilização das boas práticas de versionamento, proporcionando um fluxo de trabalho consistente e eficiente para o desenvolvimento do projeto.
+
+## 5.1 - Branches
+
+| Branches | Descrição |
+| --- | --- |
+| `master` | **Representa a versão de produção estável.** </br></br> *(a develop é mescrlada aqui assim que estiverem pronta pra produção)* |
+| `develop` |  **Branch de desenvolvimento contínuo.** </br></br> *(as features são mescladas aqui assim que estiverem prontas para teste)* |
+| `feature/#numero-da-issue` | **Para alterações na documentação.** </br></br> *(criadas a partir da develop e mescladas de volta nela quando concluídas)* |
+| `bugfix/#numero-da-issue` | **Para melhorias estéticas ou formatação do código.** </br></br> *(criadas a partir da develop)* |
+
+### Iniciando uma branch para desenvolvimento
+
+- Certifique-se de estar na branch develop:
+
+```bash
+git checkout develop
+```
+
+- Atualize a branch develop com as últimas alterações do repositório remoto:
+
+```bash
+git pull origin develop
+```
+- Crie um novo branch para o seu pull request:
+
+```bash
+git checkout -b feature/#numero_da_issue
+```
+
+
+## 5.2 - Commits
+
+| Commit | Descrição |
+| --- | --- |
+| `feat:` | Para novas funcionalidades. |
+| `fix:` | Para correção de bugs |
+| `docs:` | Para alterações na documentação. |
+| `style:` | Para melhorias estéticas ou formatação do código. |
+| `refactor:` | Para refatorações no código que não corrigem bugs nem adicionam funcionalidades. |
+| `test:` | Para adição ou modificação de testes. |
+
+### Criando o commit
+
+- Realize e confirme as alterações necessárias:
+
+```bash
+git commit -m "feat: Descrição da sua feature"
+```
+- Envie o branch com as alterações para o repositório remoto:
+
+```bash
+git push origin feature/#numero_da_issue
+```
+## 5.3 - Configuração Inicial
+
+#### 5.3.1 - Atualizar o Repositório Local
+
+<span style="color: orange;">Objetivo:</span> Garantir que todas as informações do repositório remoto estejam atualizadas localmente.
+
+```bash
+git fetch
+```
+#### 5.3.2 - Verificar as Branches Remotas Disponíveis
+
+<span style="color: orange;">Objetivo:</span> Listar todas as branches remotas disponíveis.
+
+```bash
+git branch -r
+```
+* Certifique-se de que a branch develop está presente nas branches remotas.
+
+#### 5.3.3 - Configurar o Upstream da Branch Develop
+
+<span style="color: orange;">Objetivo:</span> Estabelecer o rastreamento da branch local develop com a branch remota origin/develop.
+
+* Caso não exista a branch, siga criando localmente a branch develop rastreando a branch remota origin/develop:
+
+```bash
+git checkout -b develop origin/develop
+```
+## 5.4 - Trabalhando com Features
+
+#### 5.4.1 - Criar uma nova branch para a Issue
+
+<span style="color: orange;">Objetivo:</span> Isolar o desenvolvimento de novas funcionalidades.
+
+```bash
+git checkout -b feature/#numero_da_issue
+```
+#### 5.4.2 - Mesclar a Feature de Volta na Branch Develop
+
+<span style="color: orange;">Objetivo:</span> Integrar as novas funcionalidades na branch principal de desenvolvimento (develop).
+
+```bash
+git checkout develop
+git merge feature/#numero_da_issue
+```
+
+#### 5.4.3 - Atualizar o Repositório Remoto
+
+<span style="color: orange;">Objetivo:</span> Sincronizar as alterações feitas na branch develop com o repositório remoto.
+
+```bash
+git push origin develop
+```
+
+## 5.5 - Corrigindo Bugs (Bugfix)
+
+Identificação e correção de bugs são tratados com um fluxo específico.
+
+#### 5.5.1 - Criar uma Nova Branch para o Bugfix
+
+<span style="color: orange;">Objetivo:</span> Isolar a correção de bugs específicos.
+
+```bash
+git checkout -b bugfix/#numero_da_issue
+```
+#### 5.5.2 - Mesclar o Bugfix de Volta na Branch Develop:
+
+<span style="color: orange;">Objetivo:</span> Integrar correções na branch principal de desenvolvimento.
+
+```bash
+git checkout develop
+git merge feature/#numero_da_issue
+```
+#### 5.5.3 - Atualizar o Repositório Remoto:
+
+<span style="color: orange;">Objetivo:</span> Sincronizar as alterações feitas na branch develop com o repositório remoto.
+
+```bash
+git push origin develop
+```
