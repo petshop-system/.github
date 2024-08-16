@@ -84,7 +84,7 @@ A solução que o projeto Petshop-System proporciona é suportada por um conjunt
 | [petshop-message-api](https://github.com/petshop-system/petshop-message-api)           | localhost,petshop-message-api | 5003      | Java       | 
 | [petshop-reports-api](https://github.com/petshop-system/petshop-reports-api)           | localhost                     | undefined | Python     |
 | [petshop-system-ios](https://github.com/petshop-system/petshop-system-ios)             | undefined                     | N/A       | Swift (IOS)|
-| [petshop-system-flutter](https://github.com/petshop-system/petshop-system-flutter)     | undefined                     | N/A       | Flutter (Híbrido)|
+| [petshop-system-flutter](https://github.com/petshop-system/petshop_flutter_desktop)     | undefined                    | N/A      | Flutter (Híbrido)|
 
 
 Para iniciar as aplicações de forma padronizada se faz necessário configurar as variáveis de ambiente `DEV_ENV_FOLDER` e `PETSHOP_GO_FOLDER`. Essas variáveis devem conter as pastas padrões de desenvolvimento, desta forma, facilitando e padronizando a utilização do docker-compose para inicializar as aplicações.
