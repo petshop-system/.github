@@ -64,6 +64,7 @@ Para atender a solução proposta, as seguintes tecnologias estão sendo utiliza
 * Python
 * Redis (Cache)
 * Swift (IOS)
+* Flutter
 
 
 <div id='app'/>  
